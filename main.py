@@ -36,8 +36,6 @@ mail_to = 'zverohren@gmail.com'
 letter = letter.format(ref_link, my_name, friend_name, mail_from, mail_to)
 letter = letter.encode('UTF-8')
 
-print(letter)
-
 server = smtplib.SMTP_SSL('smtp.mail.ru:465')
 server.login(LOGIN, PASSWORD)
 server.sendmail(mail_from, mail_to, letter)
