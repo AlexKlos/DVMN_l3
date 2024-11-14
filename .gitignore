@@ -1,0 +1,8 @@
+*.log
+__pycache__/
+*.pyc
+*.pyo
+env/
+.env
+
+venv_lesson_3/
